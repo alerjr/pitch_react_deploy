@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 100%;
+}
+
+.navbar {
+    width: 100vw;
+    height: 2.5rem;
+    background-color: #B7B597;
+    color: #111e18;
+
+    font-family: "Lexend", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 100%;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #111e1872;
+}
+
+.navbar ul li a:hover {
+    color: #111e18;
+    transition: 0.2s;
+}

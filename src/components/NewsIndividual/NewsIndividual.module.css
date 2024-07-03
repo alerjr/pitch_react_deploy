@@ -1,0 +1,36 @@
+.news {
+    display: flex;
+    flex-flow: column;
+    text-align: end;
+}
+
+:root {
+    font-size: 100%;
+}
+
+.news h3 {
+    padding-bottom: 2rem;
+}
+
+.newsThumb {
+    width: 8rem;
+    height: 5rem;
+    background-color: black;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .news {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsThumb {
+        width: 8rem;
+        height: 5rem;
+        background-color: black;
+    }
+
+}

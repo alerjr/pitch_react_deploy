@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+
+  color: #ebe7db;
+}
+
+body {
+  background-color: #111e18;
+}
+
+@media screen and (min-height:1200px) {
+
+  .cabecalho {
+    position: fixed;
+    bottom: 0;
+  }
+
+}
+
+@media screen and (min-height: 850px) and (max-width: 1290px) {
+
+  .cabecalho {
+    position: relative;
+    bottom: 0;
+  }
+
+}

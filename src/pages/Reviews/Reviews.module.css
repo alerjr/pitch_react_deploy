@@ -1,0 +1,75 @@
+.review .reviewSection {
+        display: grid;
+    
+        grid-template-areas:
+        ". . . ."
+        ". imagem imagem ."
+        ". titulo subtitulo ."
+        "texto texto texto texto"
+        ;
+    
+        gap: 2rem;
+    }
+
+:root {
+    font-size: 100%;
+}
+
+.review section h1 {
+    grid-area: titulo;
+}
+
+.review section h2 {
+    grid-area: subtitulo;
+    font-weight: 400;
+}
+
+.review section p {
+    grid-area: texto;
+    max-width: 50%;
+    margin: 0 25%;
+}
+
+.review section .reviewImg {
+    grid-area: imagem;
+
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 440px) and (max-height: 940px) {
+    .review section p, h1, h2 {
+        grid-area: texto;
+        max-width: 75%;
+        margin: 0 25%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1030px) and (max-height: 1370px) {
+    .review section p, h1, h2 {
+        grid-area: texto;
+        max-width: 75%;
+        margin: 0 25%;
+        text-align: center;
+    }
+}
+
+@media (min-width:1700px) and (max-width:6200px) {
+
+    .review .reviewSection {
+        display: flex;
+        flex-direction: column;
+
+        padding: 1rem;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .review section p {
+        margin: 0;
+        max-width: 75%;
+    }
+}
